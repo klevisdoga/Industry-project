@@ -2,22 +2,57 @@
 @use './mixins' as *;
 
 
-h1 {
+@font-face {
+    font-family: Neue Haas Grotesk;
+    src: url(../Assets/Fonts/NeueHaasDisplayRoman.ttf);
+}
 
+@font-face {
+    font-family: ChronicalDisplay;
+    src: url(../Assets/Fonts/ChronicleDisplayRoman.otf);
+}
+
+
+h1 {
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 h2{
-
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
 }
 
 h3{
-
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
+    font-size: .89rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: $secondary-five;
 }
 
 h4{
-
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
 }
 
 p{
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
+}
+
+.homepage__text-button{
+    font-family: ChronicalDisplay, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
     
+    @include tablet{
+        font-size: 2rem;
+    }
+}
+
+.footer__copyright{
+    font-family: Neue Haas Grotesk, 'Times New Roman', Times, serif;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: $primary-one;
 }
