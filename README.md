@@ -17,3 +17,12 @@ To run the web app:
 5. "npm start" to start the project ihn the browser.
 
 Must have "Node" installed, and prefered web browser is Google Chrome.
+
+
+#Project Build
+
+The project was build in a 6 - 8 hour time frame. 
+The build quality of code is not meant to represent my standards or ability to right code. 
+It was done isn such a way to be a less itme consuming and effiecent as possible.
+
+Thank you.
