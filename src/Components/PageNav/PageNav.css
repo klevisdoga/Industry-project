@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  height: 4.75rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 3rem;
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 0 6rem;
+  }
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  transition: left 0.5s ease-in-out;
+}
+.header__nav-menu {
+  padding-top: 0.1rem;
+  width: 1.25rem;
+  margin-right: 2rem;
+}
+.header__nav-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin: 0 -1rem;
+  border-bottom: 2px solid #c6c6c6;
+}
+.header__nav-heading--close {
+  position: absolute;
+  right: 1.5rem;
+}
+.header__nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.header__nav-list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-list-items--link {
+  text-decoration: none;
+}
+.header__nav--open {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.header__logo {
+  width: 12.25rem;
+  height: 1rem;
+}
+.header__shop {
+  display: flex;
+}
+.header__shop-search {
+  padding-right: 1rem;
+  width: 2.2rem;
+}
+.header__shop-bag {
+  width: 1.1rem;
+}/*# sourceMappingURL=PageNav.css.map */

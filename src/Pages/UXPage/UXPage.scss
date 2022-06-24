@@ -1,0 +1,306 @@
+@use "../../Partials/mixins" as *;
+@use "../../Partials/variables" as *;
+
+.ux {
+    padding: 1.5rem;
+    padding-top: 6rem;
+    background: linear-gradient(rgba(57, 57, 57, 0.5), rgba(57, 57, 57, 0.5)),
+        url(../../Assets/Images/pexels-flo-maderebner-869258.jpg) center no-repeat;
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+
+    &__text {
+        width: 15rem;
+        margin: auto;
+
+        &-title {
+            color: $primary-one;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    &__selections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+
+        &-redirect{
+            text-decoration: none;
+            color: black;
+        }
+
+        &-one {
+            background: $primary-one;
+            margin-bottom: 1.5rem;
+            width: 12rem;
+            text-align: center;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+
+            &:active {
+                transform: scale(0.8);
+            }
+        }
+
+        &-two {
+            @extend .ux__selections-one;
+        }
+    }
+
+    &__cancel-button {
+        margin-bottom: 2rem;
+    }
+
+    // # SECOND PAGE
+
+    &__container {
+        padding: 2rem 3rem;
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        text-align: center;
+
+        &-title {
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+        &-button {
+            background-color: $primary-one;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 10px;
+            color: $secondary-three;
+            margin-top: 2rem;
+
+            &:active {
+                transform: scale(0.8);
+            }
+
+            &--active {
+                background-color: $neutral-five;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 10px;
+                color: $primary-one;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        width: 100%;
+
+        &-one {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+
+            &--active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+                width: 7rem;
+                padding: 0.5rem 1rem;
+                border-radius: 10px;
+                background-color: $primary-one;
+                box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+            }
+
+            &-image {
+                width: 50px;
+
+                &--boots {
+                    width: 35px;
+                }
+
+                &--gloves {
+                    width: 40px;
+                }
+            }
+
+            &-text {
+                margin-top: 0.5rem;
+            }
+        }
+
+        &-two--active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: $primary-one;
+            box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+        }
+        &-three--active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: $primary-one;
+            box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+        }
+        &-four--active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: $primary-one;
+            box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+        }
+        &-five--active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            width: 7rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: $primary-one;
+            box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+        }
+    }
+    // # PAGE 3
+
+    &__options-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        width: 100%;
+
+        &-box {
+            width: 11.25rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+
+            &--everyday {
+                width: 11.25rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 1rem;
+                border-radius: 28px;
+                background: $primary-one;
+                box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+            }
+            &--hiking {
+                width: 11.25rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 1rem;
+                border-radius: 28px;
+                background: $primary-one;
+                box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+            }
+            &--trekking {
+                width: 11.25rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 1rem;
+                border-radius: 28px;
+                background: $primary-one;
+                box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+            }
+            &--skiing {
+                width: 11.25rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 1rem;
+                border-radius: 28px;
+                background: $primary-one;
+                box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+            }
+        }
+
+        &--title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        // # PAGE 4
+    }
+    &__options-three--image {
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+
+        &-two {
+            @extend .ux__options-three--image;
+            background-color: black;
+        }
+        &-three {
+            @extend .ux__options-three--image;
+            background-color: red;
+        }
+        &-four {
+            @extend .ux__options-three--image;
+            background-color: #aba89c;
+        }
+    }
+    // # PAGE 5
+
+    &__options-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 6rem;
+        padding: 0.5rem 1rem;
+        border-radius: 28px;
+
+        &--five {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 6rem;
+            padding: 0.5rem 1rem;
+            border-radius: 28px;
+            background-color: $primary-one;
+            box-shadow: 2px 3px rgba($color: #000, $alpha: 0.3);
+        }
+
+        &--six{
+            @extend .ux__options-three--five;
+        }
+        &--seven{
+            @extend .ux__options-three--five;
+        }
+        &--eight{
+            @extend .ux__options-three--five;
+        }
+        &--nine{
+            @extend .ux__options-three--five;
+        }
+        &--ten{
+            @extend .ux__options-three--five;
+        }
+
+        &-text {
+        }
+    }
+}
