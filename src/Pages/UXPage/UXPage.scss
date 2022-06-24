@@ -27,6 +27,11 @@
         align-items: center;
         margin-top: 4rem;
 
+        &-redirect{
+            text-decoration: none;
+            color: black;
+        }
+
         &-one {
             background: $primary-one;
             margin-bottom: 1.5rem;
@@ -42,9 +47,6 @@
 
         &-two {
             @extend .ux__selections-one;
-        }
-
-        &-span {
         }
     }
 

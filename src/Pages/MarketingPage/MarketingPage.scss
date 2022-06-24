@@ -2,8 +2,11 @@
 @use '../../Partials/variables' as *;
 
 .marketing{
-
+    height: 78.5vh;
     padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
 
     &__slide-container{
         display: flex;
@@ -16,10 +19,6 @@
         &::-webkit-scrollbar{
             display: none;
         }
-        
-        @include desktop{
-            padding: 2rem 20rem;
-        }
 
     }
 
@@ -28,43 +27,33 @@
         margin-right: 2rem;
 
         @include desktop{
-            width: 80rem;
-            margin-right: 20rem;
+            width: 70rem;
         }
         
         &--left{
-            
             position: fixed;
             z-index: 1;
-            left: 1rem;
-            bottom: 10.5rem;
-            background: $primary-one;
-            border: none;
+            left: 2rem;
+            bottom: 18.5rem;
             width: 50px;
             height: 50px;
             border-radius: 50%;
-
-            @include desktop{
-                left: 19.5rem;
-                bottom: 9rem;
-            }
+            background: black;
+            color: white;
+            border: none;
     
         }
         &--right{
             position: fixed;
             z-index: 1;
-            right: 1rem;
-            bottom: 10.5rem;
+            right: 2rem;
+            bottom: 18.5rem;
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: $primary-one;
+            background: black;
+            color: white;
             border: none;
-
-            @include desktop{
-                right: 19.2rem;
-                bottom: 9rem;
-            }
     
         }
     }

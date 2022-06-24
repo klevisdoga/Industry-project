@@ -111,11 +111,11 @@ export default function UXPage() {
     setUSTen(true)
   }
   const handleNextFour = () => {
+    setNextFour(true)
+    setSelected(false)
     setNextOne(false)
     setNextTwo(false)
     setNextThree(false)
-    setNextFour(true)
-    setSelected(false)
   }
 
   if (!selected && !nextOne && !nextTwo && !nextThree && !nextFour) {
@@ -195,9 +195,10 @@ export default function UXPage() {
         </div>
       </div>
     )
-  } else if (!selected && nextTwo) {
+  } else if (!selected && !nextOne && nextTwo) {
     return (
       <div className='ux'>
+        <Link to={'/'}><img src={cancel} alt='cancel button' className='ux__cancel-button' /></Link>
         <div className='ux__container'>
           <span className='ux__container-title'>What colour(s) do you <br /> prefer?</span>
           <div className='ux__options'>
@@ -222,13 +223,13 @@ export default function UXPage() {
         </div>
       </div>
     )
-  } else if(!selected && nextThree) {
-    return(
+  } else if (!selected && !nextOne && !nextTwo && nextThree) {
+    return (
       <div className='ux'>
         <Link to={'/'}><img src={cancel} alt='cancel button' className='ux__cancel-button' /></Link>
 
         <div className='ux__container'>
-          <span className='ux__container-title'>What's your shoe <br/> size?</span>
+          <span className='ux__container-title'>What's your shoe <br /> size?</span>
 
           <div className='ux__options'>
             <div onClick={handleSizeOne} className={`ux__options-three ${USFive ? 'ux__options-three--five' : ''}`}>
@@ -254,8 +255,23 @@ export default function UXPage() {
         </div>
       </div>
     )
-  } else {
-      <div></div>
+  } else if (!selected && !nextOne && !nextTwo && !nextThree && nextFour) {
+    return (
+      <div className='ux'>
+        <div className='ux__selections'>
+
+          <div className='ux__selections-one'>
+            <a rel='noreferrer' target={'_blank'} className='ux__selections-redirect' href='https://www.figma.com/proto/HzA22vzaXU3iwbBc9jvfih/Industry-Day-(Canada-Goose)?page-id=18%3A2&node-id=51%3A868&viewport=-17%2C406%2C0.35&scaling=scale-down&starting-point-node-id=17%3A6'><span className='us__selection-span'>Go to prototype</span></a>
+          </div>
+
+          <div className='ux__selections-two'>
+            <Link to={'/'} className='ux__selections-redirect'><span className='us__Selection-span'>Exit</span></Link>
+          </div>
+
+        </div>
+      </div>
+
+    )
   }
 
 }

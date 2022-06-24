@@ -26,7 +26,7 @@ export default function MarketingPage() {
   return (
     <div className='marketing'>
       <div className='marketing__slide-container' ref={scroller}>
-        <button className='marketing__slide--left' onClick={() => scrollHandler(-1600)}>LEFT</button>
+        <button className='marketing__slide--left' onClick={() => scrollHandler(-358)}>LEFT</button>
         <img src={one} alt='slide' className='marketing__slide'/>
         <img src={two} alt='slide' className='marketing__slide'/>
         <img src={three} alt='slide' className='marketing__slide'/>
@@ -41,7 +41,7 @@ export default function MarketingPage() {
         <img src={twelve} alt='slide' className='marketing__slide'/>
         <img src={thirteen} alt='slide' className='marketing__slide'/>
         <img src={fourteen} alt='slide' className='marketing__slide'/>
-        <button className='marketing__slide--right' onClick={() => scrollHandler(1600)}>RIGHT</button>
+        <button className='marketing__slide--right' onClick={() => scrollHandler(358)}>RIGHT</button>
       </div>
     </div>
   )
