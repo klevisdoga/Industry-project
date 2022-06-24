@@ -1,10 +1,6 @@
 @use "../../Partials/variables" as *;
 @use "../../Partials/mixins" as *;
 
-@keyframes smoothSlide {
-    0% {
-    }
-}
 
 .homepage {
     background-color: $primary-one;
