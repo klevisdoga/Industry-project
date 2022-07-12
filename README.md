@@ -8,21 +8,23 @@ Website remains fully responsive on all breakpoints at the homepage / form field
 
 
 
-To run the web app:
+# To run the web app:
 
-1. make a clone of the repository
-2. open up a terminal
-3. cd to the directory folder name
+1. Make a clone of the repository
+2. Open terminal
+3. cd to the project directory
 4. "npm i" to instal all dependancies used for the project
-5. "npm start" to start the project ihn the browser.
+5. "npm start" to start the project in the browser.
 
 Must have "Node" installed, and prefered web browser is Google Chrome.
 
 
-#Project Build
+# Project Build
 
-The project was build in a 6 - 8 hour time frame. 
-The build quality of code is not meant to represent my standards or ability to right code. 
-It was done isn such a way to be a less itme consuming and effiecent as possible.
+The project was built in a 6 - 8 hour time frame. 
+
+The build quality of code is not meant to represent my standards/quality of code OR organization,
+but instead to represent the ability of developing a working app in the shortest amount of 
+time possible.
 
 Thank you.
